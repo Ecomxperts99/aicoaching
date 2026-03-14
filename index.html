@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Film Making Webinar - upGrowth Ambvinet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #007bff;
+            --accent: #ff0055;
+            --dark: #0f172a;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: white; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .cta-btn { background: linear-gradient(45deg, #ff0055, #ff5e00); transition: transform 0.2s; }
+        .cta-btn:hover { transform: scale(1.05); }
+        .hidden-page { display: none; }
+    </style>
+</head>
+<body>
+
+<div id="main-content">
+    <header class="p-4 glass sticky top-0 z-50 flex justify-between items-center">
+        <h1 class="text-xl font-bold tracking-wider">upGrowth Ambvinet</h1>
+        <div class="flex gap-4 items-center">
+            <span class="text-xs border border-yellow-500 text-yellow-500 px-2 py-1 rounded">SHARK TANK FUNDED</span>
+            <span class="text-xs border border-blue-400 text-blue-400 px-2 py-1 rounded">ISO 9001:2015</span>
+        </div>
+    </header>
+
+    <section class="relative min-h-[80vh] flex flex-col items-center justify-center text-center px-4 py-12">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200" alt="AI Film Demo" class="absolute inset-0 w-full h-full object-cover opacity-30 -z-10">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-4">एआई फिल्म और मूवी मेकिंग वेबिनार</h2>
+        <p class="text-xl mb-6 text-gray-300">केवल ₹123 में भविष्य की फिल्में बनाना सीखें</p>
+        
+        <div id="countdown" class="grid grid-cols-4 gap-4 mb-8 text-2xl font-bold">
+            <div class="glass p-3 rounded-lg"><span id="days">00</span><p class="text-xs">Days</p></div>
+            <div class="glass p-3 rounded-lg"><span id="hours">00</span><p class="text-xs">Hours</p></div>
+            <div class="glass p-3 rounded-lg"><span id="mins">00</span><p class="text-xs">Mins</p></div>
+            <div class="glass p-3 rounded-lg"><span id="secs">00</span><p class="text-xs">Secs</p></div>
+        </div>
+
+        <div class="bg-blue-600/20 p-4 rounded-xl mb-6 border border-blue-500/50">
+            <p class="font-bold">23 March, Saturday | 7:00 PM - 10:00 PM (3 Hours)</p>
+        </div>
+        
+        <button class="cta-btn px-8 py-4 rounded-full font-bold text-xl shadow-lg">Book Your Slot At 123</button>
+    </section>
+
+    <div class="max-w-4xl mx-auto px-4 space-y-20 py-20">
+        
+        <section>
+            <h3 class="text-3xl font-bold mb-8 text-center">वर्कशॉप में क्या होगा?</h3>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <img src="https://images.unsplash.com/photo-1675557010061-0000a6e87a2a?auto=format&fit=crop&q=80&w=500" class="rounded-2xl shadow-2xl" alt="AI Video">
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4 text-blue-400">AI Video Generation</h4>
+                    <p class="text-gray-400">हम आपको सिखाएंगे कि कैसे सिर्फ टेक्स्ट प्रॉम्प्ट से सिनेमैटिक वीडियो और रीयलिस्टिक पात्र बनाए जाते हैं।</p>
+                    <button class="mt-6 cta-btn px-6 py-2 rounded-lg font-bold">Book Your Slot At 123</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass p-10 rounded-3xl text-center border-2 border-green-500/30">
+            <i class="fas fa-tools text-5xl text-green-400 mb-4"></i>
+            <h3 class="text-3xl font-bold mb-2">यह पूरी तरह प्रैक्टिकल वर्कशॉप है</h3>
+            <p class="text-gray-400">कोई थ्योरी नहीं! आप लाइव वर्कशॉप में होस्ट के साथ मिलकर प्रोजेक्ट्स पर काम करेंगे।</p>
+            <button class="mt-6 cta-btn px-6 py-2 rounded-lg font-bold">Book Your Slot At 123</button>
+        </section>
+
+        <section>
+            <h3 class="text-3xl font-bold mb-8">आप क्या सीखेंगे?</h3>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-3 bg-white/5 p-4 rounded-lg"><i class="fas fa-check-circle text-blue-400"></i> AI Script Writing & Storyboarding</li>
+                <li class="flex items-center gap-3 bg-white/5 p-4 rounded-lg"><i class="fas fa-check-circle text-blue-400"></i> High-End Cinematic Visuals with AI</li>
+                <li class="flex items-center gap-3 bg-white/5 p-4 rounded-lg"><i class="fas fa-check-circle text-blue-400"></i> AI Voiceovers & Background Music</li>
+                <li class="flex items-center gap-3 bg-white/5 p-4 rounded-lg"><i class="fas fa-check-circle text-blue-400"></i> Video Editing with AI Integration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="text-3xl font-bold mb-8 text-center text-yellow-400">विशेष बोनस (Worth ₹5000)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="glass p-4 rounded-xl text-center"><i class="fas fa-book mb-2 text-2xl"></i><p class="text-xs">AI Prompt E-Book</p></div>
+                <div class="glass p-4 rounded-xl text-center"><i class="fas fa-list mb-2 text-2xl"></i><p class="text-xs">Tool Masterlist</p></div>
+                <div class="glass p-4 rounded-xl text-center"><i class="fas fa-video mb-2 text-2xl"></i><p class="text-xs">Recording Access</p></div>
+                <div class="glass p-4 rounded-xl text-center"><i class="fas fa-users mb-2 text-2xl"></i><p class="text-xs">VIP Community</p></div>
+                <div class="glass p-4 rounded-xl text-center"><i class="fas fa-gift mb-2 text-2xl"></i><p class="text-xs">Asset Pack</p></div>
+            </div>
+            <div class="text-center mt-8">
+                <button class="cta-btn px-6 py-2 rounded-lg font-bold">Book Your Slot At 123</button>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h3 class="text-3xl font-bold mb-8">कोर्स सर्टिफिकेट प्राप्त करें</h3>
+            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?auto=format&fit=crop&q=80&w=600" class="mx-auto rounded-xl shadow-xl mb-6 border-4 border-white/10" alt="Certificate">
+            <button class="cta-btn px-6 py-2 rounded-lg font-bold">Book Your Slot At 123</button>
+        </section>
+
+        <section class="flex flex-col md:flex-row gap-12 items-center bg-white/5 p-8 rounded-3xl">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300" class="w-48 h-48 rounded-full object-cover border-4 border-blue-500" alt="Host">
+            <div>
+                <h3 class="text-3xl font-bold mb-2">होस्ट के बारे में</h3>
+                <p class="text-gray-400 italic mb-4">AI विशेषज्ञ और फिल्म निर्माता</p>
+                <p>पिछले 5 वर्षों से फिल्म इंडस्ट्री में सक्रिय और 100+ सफल AI प्रोजेक्ट्स के निर्माता।</p>
+                <button class="mt-6 cta-btn px-6 py-2 rounded-lg font-bold">Book Your Slot At 123</button>
+            </div>
+        </section>
+
+        <section class="text-center glass p-10 rounded-3xl">
+            <h3 class="text-3xl font-bold mb-4">हमारा ऐप डाउनलोड करें</h3>
+            <p class="text-xl text-green-400 font-bold mb-6">पाएं ₹1000 का फ्री क्रेडिट तुरंत!</p>
+            <a href="https://play.google.com/store" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="mx-auto w-48 hover:scale-105 transition-transform" alt="Play Store">
+            </a>
+        </section>
+    </div>
+
+    <footer class="glass mt-20 p-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 opacity-70">
+                    <li><button onclick="togglePage('quick-links')">Explore More</button></li>
+                    <li><button onclick="togglePage('privacy')">Privacy Policy</button></li>
+                    <li><button onclick="togglePage('refund')">Refund Policy</button></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 text-right">
+                <p>© 2026 upGrowth Ambvinet. सभी अधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="sub-page" class="hidden-page min-h-screen p-10">
+    <button onclick="backToHome()" class="mb-8 px-6 py-2 glass rounded-lg"><i class="fas fa-arrow-left mr-2"></i> Back to Home</button>
+    <div id="page-content" class="max-w-2xl mx-auto bg-white/5 p-8 rounded-xl">
+        </div>
+</div>
+
+<script>
+    // Countdown Timer
+    function updateTimer() {
+        const target = new Date('March 23, 2026 19:00:00').getTime();
+        const now = new Date().getTime();
+        const diff = target - now;
+
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = d < 10 ? '0'+d : d;
+        document.getElementById('hours').innerText = h < 10 ? '0'+h : h;
+        document.getElementById('mins').innerText = m < 10 ? '0'+m : m;
+        document.getElementById('secs').innerText = s < 10 ? '0'+s : s;
+    }
+    setInterval(updateTimer, 1000);
+
+    // Page Toggling
+    function togglePage(type) {
+        document.getElementById('main-content').style.display = 'none';
+        document.getElementById('sub-page').classList.remove('hidden-page');
+        let html = "";
+        if(type === 'privacy') {
+            html = "<h2>Privacy Policy</h2><p class='mt-4'>हम आपकी जानकारी को सुरक्षित रखते हैं और इसे किसी तीसरे पक्ष के साथ साझा नहीं करते हैं।</p>";
+        } else if (type === 'refund') {
+            html = "<h2>Refund Policy</h2><p class='mt-4'>वर्कशॉप शुरू होने से 24 घंटे पहले रद्दीकरण करने पर 100% रिफंड दिया जाएगा।</p>";
+        } else {
+            html = "<h2>Quick Links</h2><ul class='mt-4 space-y-2'><li>Our Portfolio</li><li>Client Testimonials</li><li>Upcoming Events</li></ul>";
+        }
+        document.getElementById('page-content').innerHTML = html;
+        window.scrollTo(0,0);
+    }
+
+    function backToHome() {
+        document.getElementById('main-content').style.display = 'block';
+        document.getElementById('sub-page').classList.add('hidden-page');
+    }
+</script>
+
+</body>
+</html>
